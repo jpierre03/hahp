@@ -17,8 +17,18 @@ cabal-version:       >=1.10
 
 executable HAHP
   main-is:             Main.hs
-  -- other-modules:       
-  -- other-extensions:    
-  build-depends:       base >=4.7, containers, hmatrix, time
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.7, containers, fgl, graphviz -any, hmatrix, text -any, time
   hs-source-dirs:      src
   default-language:    Haskell2010
+
+
+executable HAHP-dot
+  main-is:             Main-dot.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.7, containers, fgl, graphviz -any, hmatrix, text -any, time
+  hs-source-dirs:      src, src-dot
+  default-language:    Haskell2010
+
